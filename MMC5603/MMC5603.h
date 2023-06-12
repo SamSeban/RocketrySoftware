@@ -8,12 +8,12 @@ typedef struct {
   float y;
   float z;
   float temp;
-} SensorData;
+} MMCSensorData;
 
 extern Adafruit_MMC5603 mmc;
-extern SensorData sensorData;
+extern MMCSensorData sensorData;
 
 void initializeMMC56x3(void);
-void readMMC56x3Data(void (*dataCallback)(SensorData));
+void readMMC56x3Data(void (*dataCallback)(MMCSensorData));
 
 #endif

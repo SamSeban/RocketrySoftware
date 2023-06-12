@@ -1,7 +1,7 @@
 #include "MMC5603.h"
 
 Adafruit_MMC5603 mmc = Adafruit_MMC5603(12345);
-SensorData sensorData;
+MMCSensorData sensorData;
 
 void initializeMMC56x3(void) {
   if (!mmc.begin(MMC56X3_DEFAULT_ADDRESS, &Wire)) {
@@ -12,7 +12,7 @@ void initializeMMC56x3(void) {
   mmc.printSensorDetails();
 }
 
-void readMMC56x3Data(void (*dataCallback)(SensorData)) {
+void readMMC56x3Data(void (*dataCallback)(MMCSensorData)) {
   sensors_event_t event;
   mmc.getEvent(&event);
 
