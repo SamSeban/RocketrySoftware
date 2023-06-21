@@ -1,7 +1,7 @@
 #ifndef MMC5603_H
 #define MMC5603_H
 
-#include <Adafruit_MMC56x3.h>
+#include "../include/Adafruit_MMC56x3/Adafruit_MMC56x3.h"
 
 typedef struct {
   float x;
