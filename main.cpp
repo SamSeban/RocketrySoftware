@@ -1,4 +1,4 @@
-#include "main.h"
+#include "include/main.h"
 
 void MMCdataCallback(MMCSensorData data) {
   // Process the received sensor data here MMC5603
